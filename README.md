@@ -14,14 +14,6 @@
     There are a few shortcommings with this approach that I'll explain at the end of the README. For now, let's see it in action.
 
 
-### Create venv
-    virtualenv django-banking-venv -p python3.9
-    --- OR ---
-    python3.9 -m venv django-banking-venv
-    
-    source django-banking-venv/bin/activate
-
-
 ### Create database
 
 #### Connect to psql depending on your preferences
@@ -36,12 +28,31 @@
     \q
 
 
+### Install Redis
+    If you don't already have Redis, please install from the following:
+    https://redis.io/docs/getting-started/
+
+
+### Create venv
+    virtualenv django-banking-venv -p python3.9
+    --- OR ---
+    python3.9 -m venv django-banking-venv
+    
+    source django-banking-venv/bin/activate
+
+
 ### Create app.ini
 
 #### This is esentually a .env file.
     cp app.ini.template app.ini
     vi app.ini
     (Confirm the database settings look correct)
+
+
+### Install Requirements
+    source django-banking-venv/bin/activate
+    cd src
+    pip install -r requirements.txt
 
 
 ### Set Up Database
@@ -51,12 +62,6 @@
     python manage.py update_countries
     python manage.py update_currencies
     (This will take about 3 minutes, definitely room for improvement there)
-
-
-### Install Requirements
-    source django-banking-venv/bin/activate
-    cd src
-    pip install -r requirements.txt
 
 
 ### Launch Server
