@@ -1,0 +1,9 @@
+[development]
+debug = True
+
+[database]
+name = django_banking
+user = banker
+password = banker
+host = 127.0.0.1
+port = 5432
