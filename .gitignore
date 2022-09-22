@@ -1,3 +1,8 @@
+# My Stuff
+django-banking-venv/
+app.ini
+storage/csvs/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

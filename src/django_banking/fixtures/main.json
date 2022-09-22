@@ -1,0 +1,74 @@
+[
+  {
+    "model": "django_banking.ProcessingStatus",
+    "pk": 1,
+    "fields": {
+      "slug": "pending",
+      "label": "Pending"
+    }
+  },
+  {
+    "model": "django_banking.ProcessingStatus",
+    "pk": 2,
+    "fields": {
+      "slug": "processing",
+      "label": "Processing"
+    }
+  },
+  {
+    "model": "django_banking.ProcessingStatus",
+    "pk": 3,
+    "fields": {
+      "slug": "processed",
+      "label": "Processed"
+    }
+  },
+  {
+    "model": "django_banking.TradeType",
+    "pk": 1,
+    "fields": {
+      "slug": "sale",
+      "label": "Sale"
+    }
+  },
+  {
+    "model": "django_banking.TradeType",
+    "pk": 2,
+    "fields": {
+      "slug": "purchase",
+      "label": "Purchase"
+    }
+  },
+  {
+    "model": "django_banking.TradeTypeSpelling",
+    "pk": 1,
+    "fields": {
+      "spelling": "sale",
+      "trade_type_id": 1
+    }
+  },
+  {
+    "model": "django_banking.TradeTypeSpelling",
+    "pk": 2,
+    "fields": {
+      "spelling": "sele",
+      "trade_type_id": 1
+    }
+  },
+  {
+    "model": "django_banking.TradeTypeSpelling",
+    "pk": 3,
+    "fields": {
+      "spelling": "purchase",
+      "trade_type_id": 2
+    }
+  },
+  {
+    "model": "django_banking.TradeTypeSpelling",
+    "pk": 4,
+    "fields": {
+      "spelling": "parchase",
+      "trade_type_id": 2
+    }
+  }
+]
